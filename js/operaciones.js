@@ -154,4 +154,21 @@ $('#registro').click(function(){
 
 });
 
+
+ $('#reporte-presupuesto').click(function(){
+
+    var presu  = $('#autocode').val();
+    var url = 'pedf.php';
+ 
+    $.ajax({
+    method: 'POST',
+    url: url,
+    data: {presupuesto: presu},
+    success: function(output) {
+        //window.location.href= url;  
+    }
+  });
+
+});
+
  

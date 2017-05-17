@@ -42,7 +42,7 @@ html {
 }
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 13px;
+  font-size: 14px !important;
   line-height: 1.42857143;
   color: #999999;
   background-color: #f0f2f5;
@@ -57,12 +57,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #999999;
+  color: #00838f;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #dc6767;
+  color: #0097a7;
   text-decoration: none;
 }
 a:focus {
@@ -121,7 +121,7 @@ hr {
 #wrapper {
   width: 100%;
   min-height: 100%;
-  background-color: #3C3C3C;
+  /*background-color: #00838f;*/
 }
 #page-wrapper {
   min-height: 100%;
@@ -147,7 +147,7 @@ hr {
 #topbar .navbar-header {
   width: 250px;
   height: 100%;
-  background: #1E1E1E;
+  background: #00838f;
   text-align: center;
 }
 
@@ -170,9 +170,10 @@ hr {
 #topbar .topbar-main {
   display: block;
   height: 100%;
-  background: #1E1E1E;
+  background: #00838f;
 }
 #topbar .topbar-main #menu-toggle {
+  display: none !important;
   float: left;
   padding: 15px 20px;
   background: transparent;
@@ -273,7 +274,7 @@ hr {
   margin: 0;
   top: 17px;
   right: 12px;
-  color: #ffffff;
+  color: #00838f;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
@@ -282,7 +283,7 @@ hr {
   height: 100%;
   border: 0 !important;
   border-radius: 0;
-  background: #3C3C3C;
+  background: #fff;
   
 }
 #topbar .navbar-top-links li {
@@ -808,33 +809,33 @@ hr {
   padding-top: 50px !important;
 }
 #sidebar {
-  background: #3C3C3C;
+  background: #00838f;
 }
 .navbar-static-side {
   transition: 0.3s all linear;
 }
 .navbar-static-side ul li {
-  border-bottom: 1px solid #484848;
+  border-bottom: 1px solid #ccc;
 }
 .navbar-static-side ul li:first-child a {
   padding: 0;
 }
 .navbar-static-side ul li
 {
-   background: #3C3C3C; /* Old browsers */
+   background: #0097a7; /* Old browsers */
      outline: none;
       color:#d9d9d9;
     
 }
 
 .navbar-static-side ul li.active a {
-background: #3e77ab; /* Old browsers */
+background: #00acc1; /* Old browsers */
   transition: 0.2s all ease-in-out;
   outline: none;
   color:#FFF;
 }
 .navbar-static-side ul li a {
-  color: #d9d9d9;
+  color: #fff;
   padding: 15px;
 }
 .navbar-static-side ul li a span.menu-title {
@@ -848,7 +849,7 @@ background: #3e77ab; /* Old browsers */
 }
 .navbar-static-side ul li a:hover,
 .navbar-static-side ul li a:focus {
-background: #303030; /* Old browsers */
+background: #00acc1; /* Old browsers */
   transition: 0.2s all ease-in-out;
   outline: none;
   color:#FFF;
@@ -1159,8 +1160,11 @@ background: #303030; /* Old browsers */
   width: 100%;
   bottom: 0px;
   padding: 15px 20px;
-  background: #FFFFFF;
+  background: #00838f;
 }
+#footer a{
+  color: #fff;
+  }
 #theme-setting {
   position: fixed;
   right: -250px;
@@ -4507,6 +4511,11 @@ fieldset[disabled] .btn-default.active {
   border-color: #e5e5e5;
 }
 .btn-primary {
+    color: #fff;
+    border: 1px solid #0097a7 !important;
+    background-color: #00838f !important;
+}
+.btn-primary {
   color: #ffffff;
   border: 1px solid #1f68b1;
   
@@ -4516,9 +4525,9 @@ fieldset[disabled] .btn-default.active {
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
-  color: #ffffff;
-  background-color: #1f68b1;
-  border-color: #1a548d;
+    color: #fff;
+    background-color: #0097a7 !important;
+    border-color: #00acc1 !important;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -5672,7 +5681,7 @@ li [class*=" icon-"].icon-large {
   color: #594857 !important;
 }
 .text-white {
-  color: #ffffff !important;
+  color: #00838f!important;
 }
 .text-facebook {
   color: #418bca;
@@ -7013,4 +7022,31 @@ ul.chats li.out .message {
   -moz-border-radius: 0px !important;
   border-radius: 0px !important;
   border: 1px solid #e5e5e5;
+}
+
+/*RE-EDIT*/
+
+.reloj{
+  border: none;
+  color: #0097a7;
+  font-weight: bolder;
+}
+
+#sidebar{
+  min-height: 95% !important;
+}
+
+.well-custom {
+  margin: 10% 0;
+  border-radius: 5px !important;
+  background: rgba(0, 172, 193, 0.82) !important;
+  color: #fff;
+}
+legend {
+  width: 90% !important;
+
+  font-size: 22px !important;
+  color: #fff !important;
+  font-weight: bolder !important;
+  border-bottom: 2px dotted #006064 !important;
 }

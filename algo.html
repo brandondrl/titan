@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/icons/favicon.ico">
+    <link rel="apple-touch-icon" href="images/icons/favicon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/icons/favicon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/icons/favicon-114x114.png">
+    <!--Loading bootstrap css-->
+    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700">
+    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:400,700,300">
+    <link type="text/css" rel="stylesheet" href="styles/jquery-ui-1.10.4.custom.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/animate.css">
+    <link type="text/css" rel="stylesheet" href="styles/all.css">
+    <link type="text/css" rel="stylesheet" href="styles/main.css">
+    <link type="text/css" rel="stylesheet" href="styles/style-responsive.css">
+    <link type="text/css" rel="stylesheet" href="styles/zabuto_calendar.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/pace.css">
+    <link type="text/css" rel="stylesheet" href="styles/jquery.news-ticker.css">
+    <link type="text/css" rel="stylesheet" href="styles/styles_fac.css">
+</head>
+
+<body>
+
+                                    <div id="wrapper2">
+
+                                        <p style="text-align:center; font-weight:bold; padding-top:5mm;">PRESUPUESTO DE VENTA - PAQUETES DE PUBLICIDAD POR REDES SOCIALES</p>
+                                        <br>
+                                        <table class="heading" style="width: 100%;"> <tbody><tr>
+                                                <td style="width:80mm;">
+                                                    <div class="lead" style="font-weight:bold;">Marcovich Solutions, C.A</div>
+                                                    <div class="">
+                                                        Carrera 18 entre calles 25 y 26 <br>
+                                                        Barquisimeto<br>
+                                                        Lara , Venezuela<br>
+
+                                                        Web : www.marcovichsolutions.com.ve<br>
+                                                        E-mail : ventas@marcovichsolutions.com.ve <br>
+                                                        Teléfonos :  +(58) 251-435 34419 / 232 4010 
+                                                    </div>
+                                                </td>
+                                                <td rowspan="2" valign="top" align="right" style="padding:3mm;">
+                                                    <table>
+                                                        <tbody>
+                                                        <tr><td>Código de presupuesto:  </td>
+                                                        <td> 
+                                                        <div class="form-group">
+                                                            <span class="col-md-1 col-md-offset-2 text-center"></span>
+                                                            <div class="col-md-8">
+                                                             <p class="float-right" style="font-weight:bold;">{{presu}}</p>
+                                                        </div>
+                                                        </div>
+                                                        </td>
+                                                        </tr>
+                                                      <tr><td>Fecha Emisión: </td><td>{{fechaEmision}}</td></tr>
+                                                      <tr><td>Fecha Venc: </td><td>{{fechaVenc}}</td></tr>
+                                                  </tbody></table>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                            <td>
+                                                <b>Cliente</b> :<br>
+                                                Client Name: <p>{{cliente}}</p><br>
+                                                Client Address <p>{{mail}}</p>
+                                                <br>
+                                                City - Pincode , Country<br>
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+
+
+                                    <div id="content" style="width:100%">
+
+                                        <div id="invoice_body">
+                                            <table>
+                                                <tbody><tr style="background:#eee;">
+                                                    <td style="width:8%; font-weight:bold;"><b>Id</b></td>
+                                                    <td style="font-weight:bold;"><b>Descripción</b></td>
+                                                    <td style="width:15%; font-weight:bold;"><b>Meses</b></td>
+                                                    <td style="width:15%; font-weight:bold;"><b>Precio c/mes</b></td>
+                                                    <td style="width:15%; font-weight:bold;"><b>Total</b></td>
+                                                </tr>
+                                            </tbody></table>
+
+                                            <table>
+                                                <tbody>
+                                                <tr>
+                                                    <td style="width:8%;">1</td>
+                                                    
+                                                    <td style="text-align:left; padding-left:10px;">Paquete estandar</td>
+                                                    
+                                                    <td class="mono" style="width:15%;">{{p1}}</td><td style="width:15%;" class="mono">{{pp1}}</td>
+                                                    
+                                                    <td style="width:15%;" class="mono">{{pt1}}</td>
+                                                </tr> 
+                                                <tr>
+                                                    <td style="width:8%;">2</td>
+                                                    
+                                                    <td style="text-align:left; padding-left:10px;">Paquete ultra</td>
+                                                    
+                                                    <td class="mono" style="width:15%;">{{p2}}</td><td style="width:15%;" class="mono">{{pp2}}</td>
+                                                    
+                                                    <td style="width:15%;" class="mono">{{pt2}}</td>
+                                                </tr> 
+                                                <tr>
+                                                    <td style="width:8%;">3</td>
+                                                    
+                                                    <td style="text-align:left; padding-left:10px;">Paquete master</td>
+                                                    
+                                                    <td class="mono" style="width:15%;">{{p3}}</td><td style="width:15%;" class="mono">{{pp3}}</td>
+                                                    
+                                                    <td style="width:15%;" class="mono">{{pt3}}</td>
+                                                </tr> 
+                                                <tr>
+                                                    <td colspan="3"></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td colspan="3"></td>
+                                                    <td>Total :</td>
+                                                    <td class="mono" style="font-weight:bold;">{{pt}}</td>
+                                                </tr>
+                                            </tbody>
+
+                                            </table>
+                                        </div>
+    
+                                        <table style="width:100%; height:35mm;">
+                                            <tbody><tr>
+                                                <td style="width:65%;" valign="top">
+                                                    <b style="font-weight:bold;">Marcovich Solutions, C.A</b>
+                                                    <br>
+                                                    <br>
+                                                    Este presupuesto tendrá validez solo por UN MES (1) a partir de la fecha de emisión<br><br>
+                                                </td>
+                                                <td>
+                                                    <div id="box"><br>
+                                                        <p><center> <img src="C:\xampp\htdocs\titan\images\firma.png" alt="" width="100" height="80"></center> </p>
+                                                       <p><center>  __________________________</center> </p>
+                                                       <p><center>  Firma Autorizada </center></p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                             </tbody>
+                                        </table>
+                                    </div>
+
+                                    <br>
+
+                                </div>
+
+
+</body>
+</html>
